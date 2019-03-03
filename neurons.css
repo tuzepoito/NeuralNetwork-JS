@@ -1,0 +1,50 @@
+body {
+    background-color: #333;
+    color: #DDD;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+#canvasCenter {
+    width: 512px;
+    margin: 0 auto;
+}
+
+#canvasContainer {
+    position: relative;
+}
+
+#backgroundCanvas {
+    width: 512px;
+    height: 512px;
+}
+
+#pointsCanvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#densityLabel {
+    margin-left: 15px;
+    margin-bottom: 15px;
+}
+
+#presentation {
+    width: 830px;
+    margin: 15px auto;
+    line-height: 1.75em;
+}
+
+a {
+    color: #0af;
+}
+
+footer {
+    font-size: 90%;
+    margin: 30px;
+}
+
+footer a {
+    color: #ddd;
+}

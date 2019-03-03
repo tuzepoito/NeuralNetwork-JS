@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Neural Network</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="neurons.css">
+<script src="neurons.js"></script>
+</head>
+
+<body>
+
+<h1>Neural network visualization</h1>
+
+<div id="canvasCenter">
+    <div id="canvasContainer">
+        <canvas id="backgroundCanvas" height=64 width=64>
+            <p>Your browser does not support the &lt;canvas&gt; element.</p>
+        </canvas>
+        <canvas id="pointsCanvas" height=512 width=512></canvas>
+    </div>
+</div>
+
+<p id="iterations"></p>
+<p>
+    <span id="loss"></span> |
+    <span id="accuracy"></span>
+</p>
+<p>
+    <input type="range" id="numClasses" min=2 max=6 value=3 />
+    <label for="numClasses">Number of classes: <span id="numClassesText"></span></label>
+</p>
+<p>
+    <input type="range" id="hiddenSize" min=5 max=200 value=100 />
+    <label for="hiddenSize">Size of hidden layer: <span id="hiddenSizeText"></span></label>
+</p>
+<p>
+    <input type="range" id="numPoints" min=20 max=600 value=300 />
+    <label for="numPoints">Number of points: <span id="numPointsText"></span></label>
+</p>
+<p>
+    <button id="pauseButton">Pause / Play</button>
+    <button id="resetButton">Reset</button>
+</p>
+
+<p id="presentation">
+    This is a JavaScript implementation of a neural network, the
+    <a href="https://en.wikipedia.org/wiki/Multilayer_perceptron">Multilayer Perceptron</a>.<br />
+    This example in particular is inspired by the one featured in the
+    <a href="http://cs231n.github.io/neural-networks-case-study/">CS231n class</a> on Convolutional Neural Networks at
+    Standford University.<br />
+    It is a simple feed-forward neural network with only 1 hidden layer, of variable size.<br />
+    The network here is training itself to classify the points on the graph according to their class (represented by
+    their color). The colors of the background represent the area of classification as currently evaluated by
+    the network.
+</p>
+
+<footer>by <a href="/">Cédric "tuzepoito" Chartron</a> - 2019.</footer>
+
+</body>
+</html>
